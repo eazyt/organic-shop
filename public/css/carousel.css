@@ -11,6 +11,19 @@ body {
   bottom: 3rem;
   z-index: 10;
 }
+/* #myCarousel-indicators>li {
+  border-radius: 100%;
+}
+.carousel-indicators>li {
+  border-radius: 100%;
+} */
+.carousel-indicators li {
+  /* border-radius: 12px; */
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
 .carousel-item {
   height: 32rem;
   background-color: #777777;
@@ -63,7 +76,7 @@ body {
   }
 }
 @media (max-width: 400px){
-  .carousel, .figuritas{
+  .carousel{
     display: none;
   }
 }
