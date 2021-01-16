@@ -16,7 +16,7 @@ const URL = config.database
 
 mongoose.connect(URL, {
     useCreateIndex: true,
-    useFindAndModify: true,
+    useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
   })

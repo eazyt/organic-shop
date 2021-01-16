@@ -6,8 +6,9 @@
       <form action="/order" class="border border-warning p-3" method="POST" autocomplete="off">
       <input type="hidden" name="_id" value="<%= order._id %>" id="">
       <div class="form-group">
+        
         <label for="">Order</label>
-        <input type="text" name="order" placeholder="Order" class="form-control" value="<%= order.name %>"> 
+        <input type="text" name="order" placeholder="Order" class="form-control" value="<%= order.order %>"> 
       </div>
 
       <div class="form-group">

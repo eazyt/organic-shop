@@ -11,26 +11,32 @@ var saladDIV = document.getElementById('saladDIV')
 //INFORMATION
 
 var FRUIT = [
-  { name: 'Apple', price: 1 },
-  { name: 'Orange', price: 1 },
-  { name: 'Cherry', price: 1 },
-  { name: 'Strawberry', price: 1 },
-  { name: 'Kiwi', price: 1 },
-  { name: 'Banana', price: 1 },
-  { name: 'Banana', price: 1 },
-  { name: 'Granite', price: 1 },
-  { name: 'Papaya', price: 1 },
+  { name: 'Bananas', price: 2 },
+  {
+    name: 'Papaya',
+    price: 12
+  },
+  { name: 'Peaches', price: 3},
+  { name: 'Watermelon', price: 11 },
+  { name: 'Granite', price: 10 },
+  {
+    name: 'WatermelonXL',
+    price: 21
+  },
+  { name: 'Cherry', price: 13 },
+  { name: 'Strawberry', price: 19 },
+  { name: 'Oranges', price: 10 },
 ];
 var JUICE = [
-  { name: 'Juice #1', price: 10 },
-  { name: 'Juice #2', price: 11 },
-  { name: 'Juice #3', price: 12 },
-  { name: 'Juice #4', price: 13 }
+  { name: 'Orange Juice', price: 12 },
+  { name: 'Green Juice', price: 19 },
+  { name: 'Tomato Juice', price: 17 },
+  // { name: 'Juice #4', price: 13 }
 ];
 var SALAD = [
-  { name: 'salad #1', price: 10 },
-  { name: 'salad #2', price: 11 },
-  { name: 'salad #3', price: 12 },
+  { name: 'Greek Salad', price: 5 },
+  { name: 'Moroccain Salad', price: 15 },
+  { name: 'Malwain Salad', price: 2 },
   { name: 'salad #4', price: 13 }
 ];
 
@@ -48,7 +54,7 @@ function HTMLfruitProduct(con) {
               <i style="color:orange;" class="fa fa-star"></i>
               <i style="color:orange;" class="fa fa-star"></i>
               <p class="card-text">${FRUIT[con - 1].name}</p>
-              <p class="card-text">Price: ${FRUIT[con - 1].price}.00</p>
+              <p class="card-text">Price $: ${FRUIT[con - 1].price}.00</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
 
@@ -78,7 +84,7 @@ function HTMLjuiceProduct(con) {
             <i style="color:orange;" class="fa fa-star"></i>
             <i style="color:orange;" class="fa fa-star"></i>
             <p class="card-text">${JUICE[con - 1].name}</p>
-            <p class="card-text">Price: ${JUICE[con - 1].price}.00</p>
+            <p class="card-text">Price $: ${JUICE[con - 1].price}.00</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
 
@@ -110,7 +116,7 @@ function HTMLsaladProduct(con) {
             <i style="color:orange;" class="fa fa-star"></i>
             <i style="color:orange;" class="fa fa-star"></i>
             <p class="card-text">${SALAD[con - 1].name}</p>
-            <p class="card-text">Price: ${SALAD[con - 1].price}.00</p>
+            <p class="card-text">Price $: ${SALAD[con - 1].price}.00</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
 
