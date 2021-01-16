@@ -54,7 +54,7 @@ function HTMLfruitProduct(con) {
               <i style="color:orange;" class="fa fa-star"></i>
               <i style="color:orange;" class="fa fa-star"></i>
               <p class="card-text">${FRUIT[con - 1].name}</p>
-              <p class="card-text">Price $: ${FRUIT[con - 1].price}.00</p>
+              <p class="card-text">Price: $ ${FRUIT[con - 1].price}.00</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
 
@@ -84,7 +84,7 @@ function HTMLjuiceProduct(con) {
             <i style="color:orange;" class="fa fa-star"></i>
             <i style="color:orange;" class="fa fa-star"></i>
             <p class="card-text">${JUICE[con - 1].name}</p>
-            <p class="card-text">Price $: ${JUICE[con - 1].price}.00</p>
+            <p class="card-text">Price: $ ${JUICE[con - 1].price}.00</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
 
@@ -116,13 +116,9 @@ function HTMLsaladProduct(con) {
             <i style="color:orange;" class="fa fa-star"></i>
             <i style="color:orange;" class="fa fa-star"></i>
             <p class="card-text">${SALAD[con - 1].name}</p>
-            <p class="card-text">Price $: ${SALAD[con - 1].price}.00</p>
+            <p class="card-text">Price: $ ${SALAD[con - 1].price}.00</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-
-                <button type="button" onclick="cart2('${SALAD[con - 1].name}', '${SALAD[con - 1].price}', '${URL}', '${con}', '${btn}')" class="btn-sm btn-outline-secondary">
-                <a style="color:inherit;" href="/cart">BUY</a>
-                </button>
 
                 <button id='${btn}'type="button" onclick="cart('${SALAD[con - 1].name}','${SALAD[con - 1].price}', '${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary">
                 Add to Cart 

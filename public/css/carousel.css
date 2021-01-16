@@ -1,7 +1,7 @@
 body {
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  /* color: #5a5a5a; */
 }
 .carousel {
   margin-bottom: 2rem;
@@ -29,10 +29,14 @@ body {
   background-color: #777777;
 }
 .carousel-item > img{
-  position: absolute;
+    /* display: block; */
+    /* margin: auto; */
+  /* position: absolute; */
   top: 0;
   left: 0;
   min-width: 100%;
+  /* width: auto !important; */
+  /* margin: auto !important; */
   height: 32rem;
 }
 

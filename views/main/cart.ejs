@@ -2,29 +2,36 @@
 
 
 
-<div class="container mt-3">
+<div class="container mt-3 myContent">
   <main role="main">
     <div class="row">
       <div class="col">
+
         <div class="table-responsive-sm">
-          <table class="table">
+          <h1>Items in your cart</h1>
+          <table class="table" id="cart">
             <thead>
               <tr>
-                <th scope="col" >#</th>
-                <th scope="col" >Product</th>
-                <th scope="col" >Description</th>
-                <th scope="col" >Quantity</th>
-                <th scope="col" >Price</th>
+                <th style="width:10%" >#</th>
+                <th style="width:5%" >Product</th>
+                <th style="width:25%">Description</th>
+                <th style="width:10%" class="text-center">Quantity</th>
+                <th style="width:10%" class="text-center">Price</th>
+                <th style="width:10%" class="text-center">Actions</th>
               </tr>
+
             </thead>
+
             <tbody id="table">
 
             </tbody>
           </table>
+          
         </div>
+
       </div>
     </div>
-    <hr class="featurette-divider" >
+    
   </main>
 </div>
 <script src="/public/js/cart.js" ></script>

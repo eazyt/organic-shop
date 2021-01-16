@@ -14,12 +14,12 @@ var SALAD = [
   { name: 'Greek Salad', price: 5 },
   { name: 'Moroccain Salad', price: 15 },
   { name: 'Malwain Salad', price: 2 },
-  { name: 'salad #4', price: 13 },
-  { name: 'Greek Salad', price: 5 },
-  { name: 'Moroccain Salad', price: 15 },
-  { name: 'Malwain Salad', price: 2 },
-  { name: 'salad #4', price: 13 },
-  { name: 'salad #4', price: 13 },
+  { name: 'Orange Fruit Salad', price: 13 },
+  { name: 'Grapes Salad', price: 5 },
+  { name: 'Kiwi Salad', price: 15 },
+  { name: 'Pears Salad', price: 2 },
+  { name: 'Tomato Salad', price: 13 },
+  { name: 'Italian Tomotos Salad', price: 13 },
 ];
 
 //HTML
@@ -37,13 +37,9 @@ function HTMLsaladProduct(con) {
             <i style="color:orange;" class="fa fa-star"></i>
             <i style="color:orange;" class="fa fa-star"></i>
             <p class="card-text">${SALAD[con - 1].name}</p>
-            <p class="card-text">Price $: ${SALAD[con - 1].price}.00</p>
+            <p class="card-text">Price: $ ${SALAD[con - 1].price}.00</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-
-                <button type="button" onclick="cart2('${SALAD[con - 1].name}', '${SALAD[con - 1].price}', '${URL}', '${con}', '${btn}')" class="btn-sm btn-outline-secondary">
-                <a style="color:inherit;" href="/cart">BUY</a>
-                </button>
 
                 <button id='${btn}'type="button" onclick="cart('${SALAD[con - 1].name}','${SALAD[con - 1].price}', '${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary">
                 Add to Cart 

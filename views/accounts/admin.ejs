@@ -2,21 +2,24 @@
 <% layout('layout') -%>
 
 
-<div class="container mt-4">
+<div class="container mt-4 myContent">
   <main role="main" >
     <div class="row">
-      <p>This page is for admin purposes</p>
       <div class="col">
-        <p>your order is on the way</p>
+        <div class="alert alert-warning text-center">
+          <strong>Warning: </strong> THIS PAGE IS FOR ADMIN PURPOSES ONLY!!!!!.
+        </div>
+        <hr class="featurette-divider">
         <h1>Orders</h1>
         <div class="table-responsive-sm">
-          <table class="table-table-stripped">
+          <!-- <table class="table-table-stripped"> -->
+          <table class="table table-stripped">
             <thead>
               <tr>
                 <th>Id</th>
                 <th>Order</th>
                 <th>Total</th>
-                <th></th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -34,8 +37,12 @@
             </tbody>
           </table>
         </div>
+
       </div>
     </div>
+            <div class="alert alert-success text-center">
+              <strong>Notice: </strong> Thank you for shopping with us, your order was successful.
+            </div>
   </main>
 </div>
 <hr class="featurette-divider">

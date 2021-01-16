@@ -14,12 +14,12 @@ var JUICE = [
   { name: 'Orange Juice', price: 12 },
   { name: 'Green Juice', price: 19 },
   { name: 'Tomato Juice', price: 17 },
-  { name: 'Juice #4', price: 13 },
-  { name: 'Orange Juice #5', price: 12 },
-  { name: 'Green Juice #6', price: 19 },
-  { name: 'Tomato Juice #7', price: 17 },
-  { name: 'Juice #8', price: 13 },
-  { name: 'Juice #9', price: 13 }
+  { name: 'Grapes Juice', price: 13 },
+  { name: 'NZD Orange Juice', price: 12 },
+  { name: 'China fruit Juice', price: 19 },
+  { name: 'British Tomato Juice', price: 17 },
+  { name: 'Watermelon Juice', price: 13 },
+  { name: 'Cucumber Juice', price: 13 }
 ];
 
 
@@ -39,7 +39,7 @@ function HTMLjuiceProduct(con) {
             <i style="color:orange;" class="fa fa-star"></i>
             <i style="color:orange;" class="fa fa-star"></i>
             <p class="card-text">${JUICE[con - 1].name}</p>
-            <p class="card-text">Price $: ${JUICE[con - 1].price}.00</p>
+            <p class="card-text">Price: $ ${JUICE[con - 1].price}.00</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
 

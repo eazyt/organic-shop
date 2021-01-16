@@ -42,7 +42,7 @@ function HTMLfruitProduct(con) {
               <i style="color:orange;" class="fa fa-star"></i>
               <i style="color:orange;" class="fa fa-star"></i>
               <p class="card-text">${FRUIT[con - 1].name}</p>
-              <p class="card-text">Price $: ${FRUIT[con - 1].price}.00</p>
+              <p class="card-text">Price: $ ${FRUIT[con - 1].price}.00</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
 

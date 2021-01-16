@@ -14,6 +14,9 @@ router.get('/', (req, res) => {
 router.get('/cart', (req, res) => { 
   res.render('main/cart')
 })
+router.get('/navbar', (req, res) => { 
+  res.render('main/navbar')
+})
 
 router.get('/order', (req, res) => { 
   res.render('main/orders')
