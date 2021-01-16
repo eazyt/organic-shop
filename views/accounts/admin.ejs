@@ -1,0 +1,38 @@
+
+<% layout('layout') -%>
+
+
+<div class="container mt-4">
+  <main role="main" >
+    <div class="row">
+      <div class="col">
+        <h1>Orders</h1>
+        <div class="table-responsive-sm">
+          <table class="table-table-stripped">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Order</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% orders.forEach(function(order){ %>
+                <tr>
+                  <td><%= order._id %></td>
+                  <td><%= order.order %></td>
+                  <td><%= order.total %></td>
+                  <td>
+                    <a href="/order/<%= order._id%>" class="btn btn-primary">Update</a>
+                    <a href="/order/delete/<%= order._id%>" class="btn btn-danger">Delete</a>
+                  </td>
+                </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
